@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84693fe71969e19392deeec7eb133376",
+    "content-hash": "a168813f2cb5460d8156c78abfb7b96b",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -123,12 +123,12 @@
             "version": "1.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/collizo4sky/omnipay-2checkout.git",
+                "url": "https://github.com/w3guy/omnipay-2checkout.git",
                 "reference": "26908c62dfeef4d87617e5a96c1d2ca53bfc3fb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/collizo4sky/omnipay-2checkout/zipball/26908c62dfeef4d87617e5a96c1d2ca53bfc3fb5",
+                "url": "https://api.github.com/repos/w3guy/omnipay-2checkout/zipball/26908c62dfeef4d87617e5a96c1d2ca53bfc3fb5",
                 "reference": "26908c62dfeef4d87617e5a96c1d2ca53bfc3fb5",
                 "shasum": ""
             },
@@ -1205,12 +1205,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1262,12 +1262,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php70\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php70\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -1298,16 +1298,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.2.13",
+            "version": "6.2.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "95c5938aafe4b20df1454dbddb3e5005c0b26f64"
+                "reference": "ac6e92fccc7d9383dfd787056831349621b1aca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/95c5938aafe4b20df1454dbddb3e5005c0b26f64",
-                "reference": "95c5938aafe4b20df1454dbddb3e5005c0b26f64",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/ac6e92fccc7d9383dfd787056831349621b1aca2",
+                "reference": "ac6e92fccc7d9383dfd787056831349621b1aca2",
                 "shasum": ""
             },
             "require": {
@@ -1336,13 +1336,13 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPLv3"
+                "LGPL-3.0"
             ],
             "authors": [
                 {
                     "name": "Nicola Asuni",
                     "email": "info@tecnick.com",
-                    "homepage": "http://nicolaasuni.tecnick.com"
+                    "role": "lead"
                 }
             ],
             "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
@@ -1356,7 +1356,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2017-04-26T08:14:48+00:00"
+            "time": "2018-09-14T15:26:29+00:00"
         },
         {
             "name": "true/punycode",
@@ -1402,6 +1402,7 @@
                 "idna",
                 "punycode"
             ],
+            "abandoned": true,
             "time": "2016-11-16T10:37:54+00:00"
         },
         {
@@ -1459,6 +1460,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "ext-json": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
